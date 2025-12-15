@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">Year:</label>
+    <input type="text" id="number" /><br /><br />
+    <button>Pun</button>
+    <label for="" id="result"> n/y</label>
+
+    <script>
+        function leapYear() {
+            let number = document.getElementById("number").value;
+            let fnumber= Number.parseInt(number);
+            if (fnumber % 4==0){
+                document.getElementById("result").innerHTML= "Leap Year";
+
+            }
+        
+        }
+    </script>
+  </body>
+</html>
