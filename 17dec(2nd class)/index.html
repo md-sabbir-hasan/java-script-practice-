@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">User Name</label>
+    <input type="text" id="userName"><br><br>
+    <label for="">Password</label>
+    <input type="password" id="password"><br><br>
+    <button onclick="login()">Log In</button>
+    <span id="result"></span>
+
+
+    <script>
+        function login() {
+            let userName = document.getElementById("userName").value;
+            let password = document.getElementById("password").value;
+        
+        if (userName == "java" && password == "123456") {
+            document.getElementById("result").innerText = "Welcome " + userName;
+            document.getElementById("result").style.color = "green";
+            
+        } 
+        else {
+            document.getElementById("result").innerText = "User Name is Incorrect";
+            document.getElementById("result").style.color = "red";
+        }
+    }
+    </script>
+</body>
+</html>
