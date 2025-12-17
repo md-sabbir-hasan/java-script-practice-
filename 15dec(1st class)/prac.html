@@ -8,16 +8,26 @@
   <body>
     <label for="">Year:</label>
     <input type="text" id="number" /><br /><br />
-    <button>Pun</button>
+    <button onclick="leapYear()">Pun</button>
     <label for="" id="result"> n/y</label>
 
     <script>
         function leapYear() {
             let number = document.getElementById("number").value;
             let fnumber= Number.parseInt(number);
-            if (fnumber % 4==0){
+            if (fnumber % 400==0){
                 document.getElementById("result").innerHTML= "Leap Year";
 
+            }
+            if (fnumber % 4==0 && fnumber %100 ==!0) {
+              document.getElementById("result").innerHTML= "Leap Year";
+
+              
+            } else {
+              document.getElementById("result").innerHTML= " N/A Leap Year";
+
+
+              
             }
         
         }
