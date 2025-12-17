@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home2</title>
+    <style>
+      .pass {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <label>User Name</label>
+    <input type="text" id="userName" />
+    <br /><br />
+
+    <label id="passkey" class="pass">Password</label>
+    <input type="password" id="password" class="pass" />
+    <br /><br />
+
+    <button onclick="login()">Log In</button>
+    <span id="result"></span>
+
+    <script>
+      function login() {
+        let userName = document.getElementById("userName").value;
+        let passLabel = document.getElementById("passkey");
+        let passInput = document.getElementById("password");
+
+        if (userName === "kodex") {
+          passLabel.style.display = "inline";
+          passInput.style.display = "inline";
+          document.getElementById("result").innerText = "Enter Your Password";
+          document.getElementById("result").style.color = "black";
+        }
+        if (userName === "kodex" && passInput.value === "1122") {
+          document.getElementById("result").innerText = "welcome " + userName;
+          document.getElementById("result").style.color = "blue";
+        } else {
+          document.getElementById("result").innerText = "incorrect";
+          document.getElementById("result").style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
