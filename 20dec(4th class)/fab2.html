@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci Series</title>
+</head>
+<body>
+
+<script>
+  let n = parseInt(prompt("Enter a number:"));
+
+  let a = 0, b = 1;
+  let result = [];
+
+  if (n >= 1) result.push(a);
+  if (n >= 2) result.push(b);
+
+  for (let i = 3; i <= n; i++) {
+    let next = a + b;
+    result.push(next);
+    a = b;
+    b = next;
+  }
+
+  document.write(result.join(","));
+</script>
+
+</body>
+</html>
