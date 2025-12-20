@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let userId = prompt("user-------");
+
+      let userNames = ["halk", "thor", "cap", "iron", "doctor"];
+      let passeords = ["halk11", "thor22", "cap33", "iron44", "doctor55"];
+      let found = false;
+
+      for (let index = 0; index < userNames.length; index++) {
+        if (userNames[index] === userId) {
+          found = true;
+          let pass = prompt("pass-----");
+          if (passwords(index) === pass) {
+            document.writeln("welcome " + userId);
+            // break;
+          } else {
+            document.writeln("p inco");
+            break;
+          }
+        }
+      }
+      if (!found) {
+        Document.writeln("user not");
+      }
+    </script>
+  </body>
+</html>
