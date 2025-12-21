@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+table, td, tr, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+table {
+    width: 70%;
+    height: 50vh;
+}
+.navbar {
+    height: 100vh;
+    width: 10%;
+    float: left;
+    background-color: bisque;
+}
+
+.container {
+    height: 100vh;
+    width: 90%;
+    float: right;
+    
+}
+
+iframe {
+    height: 100vh;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 50px;
+    
+}
+
+ul, li {
+    list-style-type: none;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+a {
+    text-decoration: none;
+    
+}
+
+form {
+    border: 1px solid black;
+    width: 70%;
+    height: 80vh;
+    
+}
+
+.inpt{
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+}
