@@ -1,0 +1,16 @@
+  form {
+            border: 1px solid black;
+            height: 80vh;
+            width: 70%;
+            overflow: hidden;
+
+            
+        }
+        h3 {
+            text-align: center;
+            
+        }
+        .inpt {
+            width: 100%;
+            overflow: hidden;
+        }
