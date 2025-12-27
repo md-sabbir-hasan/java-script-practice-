@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">1st Arm</label>
+    <input type="text" id="arm1"><br>
+    <label for="">2nd Arm</label>
+    <input type="text" id="arm2"><br>
+    <label for="">3rd Arm</label>
+    <input type="text" id="arm3" oninput="calc()"><br>
+
+    <span id="area">gf</span><br>
+    <span id="parimeter">dff</span>
+
+    <script>
+       function calc() {
+        let arm1 =parseFloat(document.getElementById("arm1").value);
+        let arm2 =parseFloat(document.getElementById("arm2").value);
+        let arm3 =parseFloat(document.getElementById("arm3").value);
+       
+       
+       s = (arm1+arm2+arm3)/2;
+       let area = Math.sqrt(s*(s-arm1)*(s-arm2)*(s-arm3));
+       document.getElementById("area").innerText= area;
+       document.getElementById("parimeter").innerText= s*2;
+
+       }
+
+
+
+    //    w= all type of symbal
+    //    qpt[]
+    // d= text colops
+    // D= digit colops
+    // W=only symbal
+    </script>
+    
+</body>
+</html>

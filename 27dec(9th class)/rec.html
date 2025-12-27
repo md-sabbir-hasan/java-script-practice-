@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Len</label>
+    <input type="text" id="length">
+    <br>
+    <label for="">width</label>
+    <input type="text" id="width" oninput="calculation()">
+    <br>
+    <span id="area"></span>
+    <span id="parimeter"></span>
+
+
+    <script>
+        function calculation(){
+        let length = document.getElementById("length").value;
+        let width = document.getElementById("width").value;
+
+        let farea= length*width;
+        let fparimeter = 2*length+2*width;
+
+        document.getElementById("area").innerText="Area = " + farea;
+        document.getElementById("parimeter").innerText="Parimeter = " + fparimeter;
+        }
+
+    </script>
+</body>
+</html>

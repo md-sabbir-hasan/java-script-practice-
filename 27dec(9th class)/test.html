@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nav {
+    background: #111;
+    padding: 16px 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* underline */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #00c6ff;
+    transition: width 0.35s ease;
+}
+
+/* hover animation */
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* optional: active link */
+.nav a.active::after {
+    width: 100%;
+}
+
+</style>
+<body>
+    <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+</body>
+</html>

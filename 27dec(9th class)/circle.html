@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Radius:</label>
+    <input type="text" id="radius">
+    <br><br>
+    <button onclick="calc()">Area</button>
+    <span id="area"></span>
+    <span id="parameter"></span>
+    <script>
+        function calc() {
+            let radius = document.getElementById("radius").value;
+            
+            let area = radius*radius*3.1416;
+            let parameter = 2*3.1416*radius;
+            document.getElementById("area").innerText = area;
+            document.getElementById("parameter").innerText = parameter;
+            
+        }
+    </script>
+</body>
+</html>
