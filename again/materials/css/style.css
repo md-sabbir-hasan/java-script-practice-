@@ -1,0 +1,89 @@
+
+.background{
+    /* margin: 0;
+        height: 100vh;
+        background: url("navbar.gif") no-repeat center center fixed;
+        background-size: cover;
+     */
+     background-color: #000000;
+
+}
+.navn{
+    color: rgb(60, 231, 151);
+    font-weight: 500;
+
+
+}
+
+.navn:hover {
+    color: #ff009d;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 57%;
+}
+
+.support{
+    background-color: rgb(5, 88, 157);
+}
+.hover-img img {
+    transition: transform 0.5s ease;
+}
+
+.hover-img:hover img {
+    transform: scale(1.2);
+}
+
+.hover-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.hover-img:hover .hover-overlay {
+    opacity: 1;
+}
+
+/* div-3 */
+
+.success-story {
+background-color: #89b090;
+}
+
+/* div-4 */
+
+.feature {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: scale(1.03);
+    background-color: rgb(0, 255, 200);
+}
+
+/* free trail */
+
+.animated-bg {
+    background: linear-gradient(-45deg, #ff6a00, #16f102, #00c6ff, #7f00ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    border-radius: 12px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

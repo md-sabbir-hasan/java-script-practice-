@@ -1,0 +1,12 @@
+// W= only Symbol
+// w= without symbol
+// D= without Digit
+// d=only Digit
+// gi=ignore case match
+// g=accurate match
+// imut.org
+$=last
+102-c
+106-b
+107-D
+108-b
