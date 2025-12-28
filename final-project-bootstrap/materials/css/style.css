@@ -1,0 +1,146 @@
+/* Video section */
+.video-section {
+    position: relative;
+    height: 100vh;
+    /* full screen */
+    overflow: hidden;
+}
+
+/* Background video */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Navbar on top of video */
+.navbar {
+    position: relative;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.4);
+    /* transparent */
+    backdrop-filter: blur(6px);
+}
+
+/* Nav link color */
+.navn {
+    color: #fff;
+}
+
+.navn:hover {
+    color: #00ffb3;
+}
+
+
+/* Social icons bottom center */
+.social-icons {
+    position: absolute;
+    bottom: 30px;
+    /* distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    /* above video */
+}
+
+/* Optional hover effect */
+.social-icons img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Glow button */
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 10px rgba(22, 202, 6, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgb(5, 224, 206);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(26, 82, 236, 0.74);
+    }
+}
+
+.glow-btn {
+    animation: glowPulse 2s infinite;
+}
+
+
+
+/* Glow Card on Hover */
+.glow-card {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: glowPulse 6s infinite;
+}
+
+.glow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.7),
+        0 0 40px rgba(0, 255, 200, 0.5);
+}
+
+/* Glow Button (small) */
+.glow-btn {
+    position: relative;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.glow-btn:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 200, 1),
+        0 0 30px rgba(0, 255, 200, 0.7);
+    transform: scale(1.05);
+}
+
+/* Glow Button (large) */
+.glow-btn-lg {
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.glow-btn-lg:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 200, 1),
+        0 0 40px rgba(0, 255, 200, 0.7);
+    transform: scale(1.05);
+}
+
+/* Free Trial Section Background Animation */
+.free-trial-section {
+    background: linear-gradient(45deg, #4193ff, #2bffd1, #41ff5a);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
