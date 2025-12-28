@@ -1,14 +1,14 @@
 
-.background{
-    /* margin: 0;
+/* .background{
+    margin: 0;
         height: 100vh;
         background: url("navbar.gif") no-repeat center center fixed;
         background-size: cover;
-     */
-     background-color: #000000;
+    
+     background-color: #a00f0f;
 
-}
-.navn{
+} */
+/* .navn{
     color: rgb(60, 231, 151);
     font-weight: 500;
 
@@ -45,7 +45,7 @@
 
 .hover-img:hover .hover-overlay {
     opacity: 1;
-}
+} */
 
 /* div-3 */
 
@@ -87,3 +87,73 @@ background-color: #89b090;
         background-position: 0% 50%;
     }
 }
+
+
+/* bg video*/
+
+/* Background section */
+/* ---------------- Background Video ---------------- */
+.background {
+    /* position: relative; */
+    /* width: 100%; */
+    height: 100vh;
+    /* full viewport height */
+    overflow: hidden;
+    color: #16f102;
+}
+
+/* Video Styling */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    /* width: auto; */
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Dark overlay for readability */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Navbar content on top of video */
+.navbar {
+    z-index: 2;
+    position: relative;
+}
+
+.navn {
+    color: rgb(60, 231, 151);
+    font-weight: 500;
+}
+
+.navn:hover {
+    color: #ff009d;
+}
+
+/* Content above video */
+.content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Social Icons */
+.social-icons img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);}
