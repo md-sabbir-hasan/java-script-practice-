@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+</head>
+<body>
+
+    <label>Amount</label>
+    <input type="number" id="amount" oninput="calculation()"><br>
+
+    <label>Discount (%)</label>
+    <input type="number" id="discount" readonly><br>
+
+    <label>Discount amount</label>
+    <input type="number" id="disamount" readonly><br>
+
+    <label>Final price</label>
+    <input type="number" id="finalpay" readonly>
+
+    <script>
+        function calculation() {
+            let amount = parseFloat(document.getElementById("amount").value);
+            let discountRate = 0;
+
+            if (amount < 100) {
+                discountRate = 0;
+            } else if (amount < 300) {
+                discountRate = 0.10;
+            } else if (amount < 700) {
+                discountRate = 0.15;
+            } else if (amount < 1000) {
+                discountRate = 0.20;
+            }
+             else {
+                discountRate = 0.25;
+            }
+
+            let discountAmount = amount * discountRate;
+            let finalPay = amount - discountAmount;
+
+            document.getElementById("discount").value =discountRate*100;
+            document.getElementById("disamount").value = discountAmount;
+            document.getElementById("finalpay").value = finalPay;
+        }
+    </script>
+
+</body>
+</html>
