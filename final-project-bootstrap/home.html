@@ -6,14 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="materials/css/bootstrap.min.css" />
     <link rel="stylesheet" href="materials/css/style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    /> -->
   </head>
   <body>
     <div class="container-fluid video-section p-0">
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="materials/images/logo/tech-stack-logo.png" width="100" />
+          <a class="navbar-brand" href="home.html">
+            <img src="materials/images/logo/tech-stack-logo.png" width="50" />
           </a>
 
           <button
@@ -26,16 +30,152 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav w-100">
-              <a class="nav-link active" href="#">Home</a>
-              <a class="nav-link navn" href="#">About</a>
-              <a class="nav-link navn" href="#succsess-part">Past Edition</a>
-              <a class="nav-link navn" href="#">Our Team</a>
-              <a class="nav-link navn" href="#">Support</a>
-              <a class="nav-link navn" href="#">Blog</a>
-              <a class="nav-link navn" href="#">Contact</a>
-              <a class="nav-link navn" href="#">Login</a>
-            </div>
+            <ul class="navbar-nav ms-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active text-info" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="future.html">Career-Bost</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="gain-in.html">Hot-Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="degree.html">Pro.-Degree</a>
+              </li>
+
+              <!-- Courses Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-info"
+                  href="gain-in.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Courses
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end p-4"
+                  style="min-width: 350px"
+                >
+                  <div class="row">
+                    <div class="col-12 mb-2">
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="future.html"
+                      >
+                        <img
+                          src="materials/images/logo/goal.png"
+                          width="24"
+                          class="me-2"
+                        />
+                        Launch a New Career
+                      </a>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="gain-in.html"
+                      >
+                        <img
+                          src="materials/images/logo/solution.png"
+                          width="24"
+                          class="me-2"
+                        />
+                        Gain in Future Skill
+                      </a>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="degree.html"
+                      >
+                        <img
+                          src="materials/images/logo/degree-cap.png"
+                          width="24"
+                          class="me-2"
+                        />
+                        Earn a Pro Degree
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- About Dropdown -->
+              <!-- About Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-info"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end p-3">
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#succsess-part"
+                    >
+                      <img
+                        src="materials/images/logo/success.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Our Success Stories
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#special-feature"
+                    >
+                      <img
+                        src="materials/images/logo/feature.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Special Feature for Our Popularity
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#why-choose"
+                    >
+                      <img
+                        src="materials/images/logo/selection.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Why Choose Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#qna"
+                    >
+                      <img
+                        src="materials/images/logo/question-and-answer.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Questions About Us
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-info" href="login.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="login.html">Login</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -158,6 +298,523 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- build your career -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h1 class="text-center py-5">Build Your Career With Us</h1>
+        <div
+          class="row justify-content-center align-items-center text-center g-4"
+        >
+          <div class="col-md-4 col-sm-6">
+            <a href="#" target="_blank">
+              <img
+                src="materials/images/future-skill/new-career.png"
+                alt="Image 1"
+                class="img-fixed"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <a href="#" target="_blank">
+              <img
+                src="materials/images/future-skill/gain-in-skill.png"
+                alt="Image 2"
+                class="img-fixed"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <a href="#" target="_blank">
+              <img
+                src="materials/images/future-skill/earn a degre.png"
+                alt="Image 3"
+                class="img-fixed"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- trending course -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Trending courses</h2>
+
+        <div class="row g-4">
+          <!-- Most popular -->
+          <div class="col-lg-4">
+            <div class="trend-box">
+              <h5 class="mb-3">Most popular →</h5>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (30).png" />
+                <div>
+                  <small>IBM</small>
+                  <h6>IBM Full Stack Software Developer</h6>
+                </div>
+              </a>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (31).png" />
+                <div>
+                  <small>IBM</small>
+                  <h6>Python for Data Science</h6>
+                </div>
+              </a>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (33).png" />
+                <div>
+                  <small>IBM</small>
+                  <h6>DevOps & Software Engineering</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Weekly spotlight -->
+          <div class="col-lg-4">
+            <div class="trend-box">
+              <h5 class="mb-3">Weekly spotlight →</h5>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (34).png" />
+                <div>
+                  <small>Microsoft</small>
+                  <h6>Power BI Data Analyst</h6>
+                </div>
+              </a>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (35).png" />
+                <div>
+                  <small>Meta</small>
+                  <h6>Social Media Marketing</h6>
+                </div>
+              </a>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (36).png" />
+                <div>
+                  <small>Intuit</small>
+                  <h6>Academy Bookkeeping</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- In-demand skills -->
+          <div class="col-lg-4">
+            <div class="trend-box">
+              <h5 class="mb-3">In-demand AI skills →</h5>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (37).png" />
+                <div>
+                  <small>IBM</small>
+                  <h6>Generative AI Engineering</h6>
+                </div>
+              </a>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (38).png" />
+                <div>
+                  <small>Google</small>
+                  <h6>Google AI Essentials</h6>
+                </div>
+              </a>
+
+              <a href="#" class="course-item">
+                <img src="materials/images/course/trend/Screenshot (39).png" />
+                <div>
+                  <small>University</small>
+                  <h6>AI for Business</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- top-university-degree -->
+    <section class="online-degree-section py-5 text-center">
+      <div class="container">
+        <h3 class="mb-4">
+          Take your career to the next level with an online Proffesional Degree
+          (BSc, MSc, MBA, MS)
+        </h3>
+        <p class="mb-4">
+          Learn at your own pace with flexible online programs designed to help
+          you succeed.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">Explore Programs</a>
+      </div>
+    </section>
+
+    <!-- page -->
+    <section class="degree-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Find the right degree for you</h2>
+        <p class="text-center mb-5">
+          Explore our online programs and take your career to the next level.
+        </p>
+
+        <!-- Degree Grid -->
+        <div class="degree-grid" id="degreeGrid">
+          <!-- Page 1 -->
+          <div class="degree-page active">
+            <div class="row g-4">
+              <!-- Row 1 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p1.png"
+                    alt="BSc Computer Science"
+                  />
+                  <h6>BSc Computer Science</h6>
+                  <p>Earn a Bachelor of Science in CS online.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p6.png"
+                    alt="BSc Data Science"
+                  />
+                  <h6>BSc Data Science</h6>
+                  <p>Study data analysis and machine learning.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p4.png"
+                    alt="MSc Computer Science"
+                  />
+                  <h6>MSc Computer Science</h6>
+                  <p>Advance your CS skills with a Master’s program.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img src="materials/images/degree/p9.png" alt="MSc AI" />
+                  <h6>MSc Artificial Intelligence</h6>
+                  <p>Specialize in AI and machine learning online.</p>
+                </div>
+              </div>
+
+              <!-- Row 2 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p7.png"
+                    alt="BSc Business"
+                  />
+                  <h6>BSc Business</h6>
+                  <p>Learn business fundamentals online.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img src="materials/images/degree/p6.png" alt="BSc " />
+                  <h6>BSc</h6>
+                  <p>Study in Comouter Science strategies in depth.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img src="materials/images/degree/p8.png" alt="MSc Finance" />
+                  <h6>MSc Finance</h6>
+                  <p>Master financial management and analysis.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p9.png"
+                    alt="MSc Data Analytics"
+                  />
+                  <h6>MSc Data Analytics</h6>
+                  <p>Advanced studies in data-driven decisions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page 2 -->
+          <div class="degree-page">
+            <div class="row g-4">
+              <!-- Row 1 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img src="materials/images/degree/p6.png" alt="BSc Finance" />
+                  <h6>BSc Finance</h6>
+                  <p>Study financial management fundamentals.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p1.png"
+                    alt="BSc Marketing"
+                  />
+                  <h6>BSc Marketing</h6>
+                  <p>Learn advanced marketing strategies online.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p9.png"
+                    alt="MSc Business Analytics"
+                  />
+                  <h6>MSc Business Analytics</h6>
+                  <p>Learn data-driven business decisions.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p7.png"
+                    alt="MSc Cybersecurity"
+                  />
+                  <h6>MSc Cybersecurity</h6>
+                  <p>Specialize in information security online.</p>
+                </div>
+              </div>
+
+              <!-- Row 2 -->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img src="materials/images/degree/p6.png" alt="BSc AI" />
+                  <h6>BSc Artificial Intelligence</h6>
+                  <p>Explore AI fundamentals at your own pace.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p1.png"
+                    alt="BSc Data Analytics"
+                  />
+                  <h6>BSc Data Analytics</h6>
+                  <p>Learn advanced analytics techniques online.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p5.png"
+                    alt="MSc Software Engineering"
+                  />
+                  <h6>MSc Software Engineering</h6>
+                  <p>Master software development principles.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="degree-card">
+                  <img
+                    src="materials/images/degree/p8.png"
+                    alt="MSc Cloud Computing"
+                  />
+                  <h6>MSc Cloud Computing</h6>
+                  <p>Specialize in cloud technologies online.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="degree-pagination text-center mt-4">
+          <button class="page-btn active" onclick="showPage(0)">1</button>
+          <button class="page-btn" onclick="showPage(1)">2</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- explore categories -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Explore categories</h2>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a class="category-pill" href="#">Business</a>
+          <a class="category-pill" href="#">Artificial Intelligence</a>
+          <a class="category-pill" href="#">Data Science</a>
+          <a class="category-pill" href="#">Computer Science</a>
+          <a class="category-pill" href="#">IT</a>
+          <a class="category-pill" href="#">Personal Development</a>
+          <a class="category-pill" href="#">Healthcare</a>
+          <a class="category-pill" href="#">Language Learning</a>
+          <a class="category-pill" href="#">Math & Logic</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- hot new release -->
+    <section class="py-5">
+      <div class="container bg-dark">
+        <h2 class="mb-4 text-center text-light">Hot new releases</h2>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="hot-card">
+              <img src="materials/images/course/trend/hot-rel.png" />
+              <h6>Microsoft Python Development</h6>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="hot-card">
+              <img src="materials/images/course/trend/hot-rel2.png" />
+              <h6>IBM RAG & Agentic AI</h6>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="hot-card">
+              <img src="materials/images/course/trend/hot-rel3.png" />
+              <h6>Meta Full Stack Developer</h6>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="hot-card">
+              <img src="materials/images/course/trend/hot-rel4.png" />
+              <h6>Adobe Marketing Specialist</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- explor-career -->
+    <section class="py-5" style="background: #f8f9fa">
+      <div class="container">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">Explore Careers</h2>
+          <a href="#" class="text-primary fw-semibold text-decoration-none">
+            View all →
+          </a>
+        </div>
+
+        <!-- Carousel -->
+        <div
+          id="careerCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-touch="true"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-10">
+                  <a href="#">
+                    <div class="career-card">
+                      <img
+                        src="materials/images/explor-career/data sci.png"
+                        alt=""
+                      />
+                      <h5>Data Science</h5>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-10">
+                  <a href="#">
+                    <div class="career-card">
+                      <img
+                        src="materials/images/explor-career/softw.png"
+                        alt=""
+                      />
+                      <h5>Web & App Development</h5>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-10">
+                  <a href="#">
+                    <div class="career-card">
+                      <img
+                        src="materials/images/explor-career/data analy.png"
+                        alt=""
+                      />
+                      <h5>Data Analysis</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-10">
+                  <a href="#">
+                    <div class="career-card">
+                      <img
+                        src="materials/images/explor-career/digital.png"
+                        alt=""
+                      />
+                      <h5>Digital Marketing</h5>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-10">
+                  <a href="#">
+                    <div class="career-card">
+                      <img
+                        src="materials/images/explor-career/cyber.png"
+                        alt=""
+                      />
+                      <h5>Cyber Security</h5>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-10">
+                  <a href="#">
+                    <div class="career-card">
+                      <img
+                        src="materials/images/explor-career/fullstack.png"
+                        alt=""
+                      />
+                      <h5>Back End Devloper</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#careerCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#careerCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
     </section>
@@ -347,7 +1004,7 @@
       </div>
     </section>
     <!-- Features Section -->
-    <section class="features-section py-5 bg-light">
+    <section id="special-feature" class="features-section py-5 bg-light">
       <div class="container">
         <h1 class="text-center py-5 text-dark">
           Tech Stack's Stand-out Suite of Features
@@ -425,170 +1082,165 @@
         </div>
       </div>
     </section>
-    <!-- future-skill-degree -->
-    <section class="py-5 bg-light">
+
+    <!-- why choose us -->
+    <section id="why-choose" class="why-choose py-5 bg-light">
       <div class="container">
-        <h1 class="text-center py-5">Build Your Career With Us</h1>
-        <div
-          class="row justify-content-center align-items-center text-center g-4"
-        >
-          <div class="col-md-4 col-sm-6">
-            <a href="#" target="_blank">
-              <img
-                src="materials/images/future-skill/find future.png"
-                alt="Image 1"
-                class="img-fixed"
-              />
-            </a>
-          </div>
+        <h2 class="text-center mb-4">Why People Choose This Course</h2>
+        <p class="text-center mb-5">
+          Discover the key benefits that make this course perfect for learners
+          of all levels.
+        </p>
 
-          <div class="col-md-4 col-sm-6">
-            <a href="#" target="_blank">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center p-3">
               <img
-                src="materials/images/future-skill/Demandskill.png"
-                alt="Image 2"
-                class="img-fixed"
+                src="materials/images/course/trend/suc1.png"
+                alt="Expert Instructors"
+                class="mb-3"
+                width="60"
               />
-            </a>
+              <h5>Expert Instructors</h5>
+              <p>
+                Learn from industry professionals with real-world experience and
+                guidance.
+              </p>
+            </div>
           </div>
-
-          <div class="col-md-4 col-sm-6">
-            <a href="#" target="_blank">
+          <div class="col-md-4">
+            <div class="card h-100 text-center p-3">
               <img
-                src="materials/images/future-skill/degree.png"
-                alt="Image 3"
-                class="img-fixed"
+                src="materials/images/course/trend/suc2.png"
+                alt="Flexible Learning"
+                class="mb-3"
+                width="60"
               />
-            </a>
+              <h5>Flexible Learning</h5>
+              <p>
+                Access the course anytime, anywhere, and learn at your own pace.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center p-3">
+              <img
+                src="materials/images/course/trend/suc3.png"
+                alt="Certification"
+                class="mb-3"
+                width="60"
+              />
+              <h5>Certification</h5>
+              <p>
+                Earn a certificate upon completion to showcase your new skills
+                to employers.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- explor-career -->
-    <section class="py-5" style="background: #f8f9fa">
+    <!-- Faq -->
+    <section id="qna" class="faq-section py-5 bg-light">
       <div class="container">
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <h2 class="mb-0">Explore Careers</h2>
-          <a href="#" class="text-primary fw-semibold text-decoration-none">
-            View all →
-          </a>
-        </div>
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <p class="text-center mb-5">
+          Answers to the most common questions about the course.
+        </p>
 
-        <!-- Carousel -->
-        <div
-          id="careerCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-touch="true"
-        >
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row g-4 justify-content-center">
-                <div class="col-md-4 col-10">
-                  <a href="#">
-                    <div class="career-card">
-                      <img
-                        src="materials/images/explor-career/dataSci.png"
-                        alt=""
-                      />
-                      <h5>Data Science</h5>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-md-4 col-10">
-                  <a href="#">
-                    <div class="career-card">
-                      <img
-                        src="materials/images/explor-career/web&app.png"
-                        alt=""
-                      />
-                      <h5>Web & App Development</h5>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-md-4 col-10">
-                  <a href="#">
-                    <div class="career-card">
-                      <img
-                        src="materials/images/explor-career/dataAna.png"
-                        alt=""
-                      />
-                      <h5>Data Analysis</h5>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row g-4 justify-content-center">
-                <div class="col-md-4 col-10">
-                  <a href="#">
-                    <div class="career-card">
-                      <img
-                        src="materials/images/explor-career/digitalmark.png"
-                        alt=""
-                      />
-                      <h5>Digital Marketing</h5>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-md-4 col-10">
-                  <a href="#">
-                    <div class="career-card">
-                      <img
-                        src="materials/images/explor-career/Cybar.png"
-                        alt=""
-                      />
-                      <h5>Cyber Security</h5>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-md-4 col-10">
-                  <a href="#">
-                    <div class="career-card">
-                      <img
-                        src="materials/images/explor-career/backEnd.png"
-                        alt=""
-                      />
-                      <h5>Back End Devloper</h5>
-                    </div>
-                  </a>
-                </div>
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+            <h2 class="accordion-header" id="faqHeading1">
+              <button
+                class="accordion-button faq-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse1"
+                aria-expanded="true"
+                aria-controls="faqCollapse1"
+              >
+                Who is this course for?
+                <span class="faq-icon ms-auto"
+                  ><i class="bi bi-chevron-down"></i
+                ></span>
+              </button>
+            </h2>
+            <div
+              id="faqCollapse1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeading1"
+            >
+              <div class="accordion-body">
+                This course is designed for beginners, intermediate learners,
+                and professionals looking to enhance their skills.
               </div>
             </div>
           </div>
 
-          <!-- Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#careerCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+            <h2 class="accordion-header" id="faqHeading2">
+              <button
+                class="accordion-button collapsed faq-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse2"
+                aria-expanded="false"
+                aria-controls="faqCollapse2"
+              >
+                How long does the course take to complete?
+                <span class="faq-icon ms-auto"
+                  ><i class="bi bi-chevron-down"></i
+                ></span>
+              </button>
+            </h2>
+            <div
+              id="faqCollapse2"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading2"
+            >
+              <div class="accordion-body">
+                The course is self-paced and can typically be completed in 4–6
+                weeks depending on your schedule.
+              </div>
+            </div>
+          </div>
 
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#careerCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+            <h2 class="accordion-header" id="faqHeading3">
+              <button
+                class="accordion-button collapsed faq-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse3"
+                aria-expanded="false"
+                aria-controls="faqCollapse3"
+              >
+                Do I get a certificate after completing the course?
+                <span class="faq-icon ms-auto"
+                  ><i class="bi bi-chevron-down"></i
+                ></span>
+              </button>
+            </h2>
+            <div
+              id="faqCollapse3"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading3"
+            >
+              <div class="accordion-body">
+                Yes! You will receive a verified certificate that you can share
+                on LinkedIn or include in your resume.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- free-trail -->
-    <!-- <section class="free-trial-section py-5 text-dark position-relative">
+    <section class="free-trial-section py-5 text-dark position-relative">
       <div class="container text-center py-5">
         <h1 class="mb-4">
           Launch in 30 days with <br />
@@ -598,7 +1250,120 @@
           Start Free Trial
         </button>
       </div>
-    </section> -->
+    </section>
+
+    <!-- footer-section -->
+    <footer class="footer bg-dark text-light pt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & About -->
+          <div class="col-md-3 mb-4">
+            <h4 class="mb-3">YourCourse</h4>
+            <p>
+              Learn new skills online with top instructors. Join thousands of
+              learners and grow your career.
+            </p>
+          </div>
+
+          <!-- Explore Links -->
+          <div class="col-md-2 mb-4">
+            <h5 class="mb-3">Explore</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Courses</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Programs</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Degrees</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Certificates</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources Links -->
+          <div class="col-md-2 mb-4">
+            <h5 class="mb-3">Resources</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Tutorials</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company Links -->
+          <div class="col-md-2 mb-4">
+            <h5 class="mb-3">Company</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Press</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-3 mb-4">
+            <h5 class="mb-3">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+        <div class="d-flex justify-content-between align-items-center py-3">
+          <p class="mb-0">&copy; 2025 YourCourse. All rights reserved.</p>
+          <div>
+            <a href="#" class="text-light text-decoration-none me-3"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-light text-decoration-none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="materials/js/bootstrap.bundle.min.js"></script>
     <script src="materials/js/extarnal.js"></script>

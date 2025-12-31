@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="materials/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="materials/css/login.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid video-section p-0">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img src="materials/images/logo/tech-stack-logo.png" width="50" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active text-info" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="future.html">Career-Bost</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="gain-in.html">Hot-Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="degree.html">Pro.-Degree</a>
+              </li>
+
+              <!-- Courses Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-info"
+                  href="gain-in.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Courses
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end p-4"
+                  style="min-width: 350px"
+                >
+                  <div class="row">
+                    <div class="col-12 mb-2">
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="future.html"
+                      >
+                        <img
+                          src="materials/images/logo/goal.png"
+                          width="24"
+                          class="me-2"
+                        />
+                        Launch a New Career
+                      </a>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="gain-in.html"
+                      >
+                        <img
+                          src="materials/images/logo/solution.png"
+                          width="24"
+                          class="me-2"
+                        />
+                        Gain in Future Skill
+                      </a>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="degree.html"
+                      >
+                        <img
+                          src="materials/images/logo/degree-cap.png"
+                          width="24"
+                          class="me-2"
+                        />
+                        Earn a Pro Degree
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- About Dropdown -->
+              <!-- About Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-info"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end p-3">
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#succsess-part"
+                    >
+                      <img
+                        src="materials/images/logo/success.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Our Success Stories
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#special-feature"
+                    >
+                      <img
+                        src="materials/images/logo/feature.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Special Feature for Our Popularity
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#why-choose"
+                    >
+                      <img
+                        src="materials/images/logo/selection.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Why Choose Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center"
+                      href="#qna"
+                    >
+                      <img
+                        src="materials/images/logo/question-and-answer.png"
+                        width="24"
+                        class="me-2"
+                      />
+                      Questions About Us
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-info" href="login.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Welcome Back</h2>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rememberMe" />
+              <label class="form-check-label" for="rememberMe"
+                >Remember Me</label
+              >
+            </div>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-login">Login</button>
+          <p class="text-center mt-3">
+            Don't have an account? <a href="#">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer-section -->
+    <footer class="footer bg-dark text-light pt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & About -->
+          <div class="col-md-3 mb-4">
+            <h4 class="mb-3">YourCourse</h4>
+            <p>
+              Learn new skills online with top instructors. Join thousands of
+              learners and grow your career.
+            </p>
+          </div>
+
+          <!-- Explore Links -->
+          <div class="col-md-2 mb-4">
+            <h5 class="mb-3">Explore</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Courses</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Programs</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Degrees</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Certificates</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources Links -->
+          <div class="col-md-2 mb-4">
+            <h5 class="mb-3">Resources</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Tutorials</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company Links -->
+          <div class="col-md-2 mb-4">
+            <h5 class="mb-3">Company</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Press</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-3 mb-4">
+            <h5 class="mb-3">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+        <div class="d-flex justify-content-between align-items-center py-3">
+          <p class="mb-0">&copy; 2025 YourCourse. All rights reserved.</p>
+          <div>
+            <a href="#" class="text-light text-decoration-none me-3"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-light text-decoration-none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="materials/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
