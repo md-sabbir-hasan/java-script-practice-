@@ -1,0 +1,195 @@
+/* Navbar on top of video */
+.navbar.fixed-top {
+    position: fixed;
+    /* keep it fixed at top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    /* higher than video */
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    transition: background 0.3s ease;
+}
+
+/* navbar-drpdown */
+/* Dropdown card style */
+/* Ensure dropdown width fits content */
+.navbar .dropdown-menu {
+    min-width: 220px;
+    /* Adjust as needed */
+    white-space: nowrap;
+    /* Prevent text wrap */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown items */
+.navbar .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between icon & text */
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: translateX(5px);
+}
+
+/* Make sure dropdown toggles properly */
+.navbar .dropdown-toggle::after {
+    transition: transform 0.3s ease;
+}
+
+.navbar .dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Dropdown container */
+.dropdown-menu {
+    border-radius: 14px;
+    padding: 18px;
+    border: none;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    animation: dropdownFade 0.25s ease-in-out;
+}
+
+/* Dropdown item */
+.dropdown-item {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f2937;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+/* Icon inside item */
+.dropdown-item img {
+    transition: transform 0.25s ease;
+}
+
+/* Hover effect */
+.dropdown-item:hover {
+    background-color: #f3f4f6;
+    transform: translateX(6px);
+    color: #0d6efd;
+}
+
+/* Icon animation on hover */
+.dropdown-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Dropdown appear animation */
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item.dropdown {
+        position: relative;
+    }
+
+    .nav-item.dropdown:hover>.dropdown-menu {
+        display: block;
+        left: auto;
+        right: 0;
+        margin-top: 8px;
+    }
+}
+
+
+/* anchortag item hover */
+/* Navbar link base */
+.navbar-nav .nav-link {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: #eaeaea;
+    transition: color 0.3s ease;
+}
+
+/* Hover text color */
+.navbar-nav .nav-link:hover {
+    color: #00f2ff;
+}
+
+/* Underline animation */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00f2ff, #6a5cff);
+    transition: width 0.3s ease;
+}
+
+/* Expand underline on hover */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    color: #00f2ff;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+/* nav-bar-end */
+
+
+.course-hero {
+    background: #f8fbff;
+}
+
+.hero-shape {
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle at center,
+            #e6f0ff,
+            #f8fbff);
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.info-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-box h6 {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.info-box p {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin: 0;
+}

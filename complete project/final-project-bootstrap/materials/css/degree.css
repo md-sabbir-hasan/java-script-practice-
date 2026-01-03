@@ -1,0 +1,309 @@
+/* Navbar on top of video */
+.navbar.fixed-top {
+    position: fixed;
+    /* keep it fixed at top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    /* higher than video */
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    transition: background 0.3s ease;
+}
+
+/* navbar-drpdown */
+/* Dropdown card style */
+/* Ensure dropdown width fits content */
+.navbar .dropdown-menu {
+    min-width: 220px;
+    /* Adjust as needed */
+    white-space: nowrap;
+    /* Prevent text wrap */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown items */
+.navbar .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between icon & text */
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: translateX(5px);
+}
+
+/* Make sure dropdown toggles properly */
+.navbar .dropdown-toggle::after {
+    transition: transform 0.3s ease;
+}
+
+.navbar .dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Dropdown container */
+.dropdown-menu {
+    border-radius: 14px;
+    padding: 18px;
+    border: none;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    animation: dropdownFade 0.25s ease-in-out;
+}
+
+/* Dropdown item */
+.dropdown-item {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f2937;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+/* Icon inside item */
+.dropdown-item img {
+    transition: transform 0.25s ease;
+}
+
+/* Hover effect */
+.dropdown-item:hover {
+    background-color: #f3f4f6;
+    transform: translateX(6px);
+    color: #0d6efd;
+}
+
+/* Icon animation on hover */
+.dropdown-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Dropdown appear animation */
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item.dropdown {
+        position: relative;
+    }
+
+    .nav-item.dropdown:hover>.dropdown-menu {
+        display: block;
+        left: auto;
+        right: 0;
+        margin-top: 8px;
+    }
+}
+
+
+/* anchortag item hover */
+/* Navbar link base */
+.navbar-nav .nav-link {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: #eaeaea;
+    transition: color 0.3s ease;
+}
+
+/* Hover text color */
+.navbar-nav .nav-link:hover {
+    color: #00f2ff;
+}
+
+/* Underline animation */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00f2ff, #6a5cff);
+    transition: width 0.3s ease;
+}
+
+/* Expand underline on hover */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    color: #00f2ff;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+/* nav-bar-end */
+
+
+
+
+
+.online-degree-section {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    /* nice gradient */
+    color: #fff;
+    border-radius: 16px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.online-degree-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.online-degree-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.online-degree-section .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #6610f2;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.online-degree-section .btn:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
+
+
+/* page */
+.degree-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.degree-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.degree-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.degree-page {
+    display: none;
+}
+
+.degree-page.active {
+    display: block;
+}
+
+.degree-pagination .page-btn {
+    background: #f0f0f0;
+    border: none;
+    padding: 8px 14px;
+    margin: 0 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.degree-pagination .page-btn.active,
+.degree-pagination .page-btn:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+/* browse */
+.browse-section {
+    background: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.browse-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #0d6efd;
+}
+
+.browse-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+
+.browse-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background: #0d6efd;
+    color: #fff;
+}
+
+/* faq */
+.faq-section {
+    background-color: #f8f9fa;
+}
+
+.accordion-button {
+    background: #fff;
+    color: #0d6efd;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background: #0d6efd;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-body {
+    color: #555;
+}
