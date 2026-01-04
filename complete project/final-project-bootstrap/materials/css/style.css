@@ -155,7 +155,7 @@
     left: 0;
     bottom: -6px;
     width: 0;
-    height: 2px;
+    height: 5px;
     background: linear-gradient(90deg, #00f2ff, #6a5cff);
     transition: width 0.3s ease;
 }
@@ -658,10 +658,18 @@
     margin-bottom: 10px;
 }
 
-.degree-card:hover {
-    transform: translateY(-5px);
+/* .degree-card:hover {
+    transform: translateY(-50px);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-}
+} */
+ .degree-card {
+     transition: transform 0.4s ease, box-shadow 0.4s ease;
+ }
+
+ .degree-card:hover {
+     transform: translateY(-50px) rotate(3deg);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+ }
 
 .degree-page {
     display: none;
@@ -726,3 +734,30 @@
             0 0 40px 10px rgba(0, 200, 255, 0.5);
     }
 } */
+
+
+
+
+/* new  */
+.hot-info-box {
+    background: linear-gradient(135deg, #0b5ed7, #2f9bff);
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.course-card img {
+    height: 320px;
+    
+    width: 100%;
+    border-radius: 14px;
+}
