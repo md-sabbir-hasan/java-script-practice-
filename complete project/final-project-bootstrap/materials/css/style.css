@@ -156,7 +156,7 @@
     bottom: -6px;
     width: 0;
     height: 5px;
-    background: linear-gradient(90deg, #00f2ff, #6a5cff);
+    background: linear-gradient(90deg, #00f2ff, #6a5cff, #ff0000, #04cc1f);
     transition: width 0.3s ease;
 }
 
@@ -293,10 +293,10 @@
     width: 100%;
     height: 100px;
    
-    max-width: 500px;
+    max-width: 400px;
     
 
-    object-fit: cover;
+    /* object-fit: cover; */
    
     display: block;
 
