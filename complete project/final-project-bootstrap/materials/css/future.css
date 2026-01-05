@@ -179,10 +179,13 @@
 }
 
 .explore-roles .card:hover .card-img-top {
-    transform: scale(1.08);
+    /* transform: scale(1.08);
     box-shadow:
         0 0 15px rgba(13, 110, 253, 0.8),
-        0 0 30px rgba(102, 16, 242, 0.6);
+        0 0 30px rgba(102, 16, 242, 0.6); */
+
+        transition: 2s ease;
+        transform: rotateY(360deg);
 }
 .category-pill {
     padding: 10px 18px;
@@ -205,4 +208,16 @@
     width: 100%;
     max-height: 380px;
     object-fit: cover;
+}
+
+
+
+/* cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;   /* cursor color */
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
 }
