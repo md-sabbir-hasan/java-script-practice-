@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci sum</title>
+</head>
+<body>
+    <script>
+        let fibosum=parseInt(prompt('Please Enter Input.'));
+
+        let n=0;
+        let n1=1;
+        let sum=0;
+        let totalsum=n1;
+
+        document.write(n + ' ');
+        document.write(n1 + ' ');
+
+    for(i=3; i<=fibosum; i++){
+        sum=n+n1;
+            document.write(sum + ' ');
+        totalsum += sum;
+        n=n1;
+        n1=sum;
+    }
+    document.write(totalsum + ' ');
+    
+
+    </script>
+    
+</body>
+</html>

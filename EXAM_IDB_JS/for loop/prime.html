@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop using prime number</title>
+</head>
+<body>
+    <script>
+
+        let input = parseInt(prompt('Please enter a number'));
+        let count = 0;
+        // prime Number k find out korte help korbe count
+        
+
+        for(let i=1; i<=input; i++){
+             if(input % i==0){
+                count+=1;
+            }
+        }
+        if(count == 2){
+            document.write(input + ' is Prime Number');
+        }
+        else{
+            document.write(input + ' is not Prime Number');
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let grade = prompt("please input a number for checking grade point.");
+
+        if (grade >= 101) {
+
+            document.write(grade + " is invalide number.It must be 0 to 100 ");
+        }
+        else if (grade >= 90 && grade < 101) {
+            document.write(grade + " is positive marks and the number is carry Grade 'A'. ");
+        }
+        else if (grade >= 80) {
+            document.write(grade + " is positive marks and the number is carry Grade 'B'. ");
+        }
+        else if (grade >= 70) {
+            document.write(grade + " is positive marks and the number is carry Grade 'C'. ");
+        }
+        else if (grade >= 60) {
+            document.write(grade + " is positive marks and the number is carry Grade 'D'. ");
+
+        }
+        else if (grade < 0) {
+            document.write(grade + " is a negative number so it has not any grade.");
+
+        }
+
+        else {
+            document.write('is fail');
+
+        }
+    </script>
+</body>
+
+</html>

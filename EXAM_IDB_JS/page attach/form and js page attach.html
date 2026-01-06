@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form & js html page including</title>
+</head>
+<body>
+    <form action=""> 
+
+        <label for=""><b>Name:</b></label>
+        <input type="text" id="name"><br><p></p>
+
+        <label for=""><b>ID:</b></label>
+        <input type="text" id="id"><br><p></p>
+
+        <label for=""><b>Age:</b></label>
+        <input type="text" id="age"><br><p></p>
+
+        <label for=""><b>Password:</b></label>
+        <input type="password" id="pass"><br><p></p>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function form (){
+            let name = document.getElementById("name").value;
+            let id = document.getElementById("id").value;
+            let age = document.getElementById("age").value;
+            let pass = document.getElementById("pass").value;
+
+            console.log(name + " " + id + " " +age + " " + pass);
+
+            let output = "Name: " + name + "<br>"
+                        + "ID: " + id + "<br>"
+                        + "Age: " + age 
+
+            let newWindow = window.open(" ",'_blank');
+            newWindow.document.write("<pre>"+ output + " </pre>");            
+        }
+    </script>
+</body>
+</html>

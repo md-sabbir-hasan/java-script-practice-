@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" id="myForm">
+
+        <label for=""><b>Name:</b></label>
+        <input type="text" id="name"> <br><p></p>
+
+        <label for=""><b>Contact:</b></label>
+        <input type="text" id="contact"> <br><p></p>
+
+        <label for=""><b>Remarks:</b></label>
+        <textarea name="" cols="7" rows="4" id="remarks" ></textarea> <br><p></p>
+
+        <label for=""><b>Gender:</b></label>
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> female <br><p></p>
+
+        <input type="radio" name="gender" value="male" > Male <br>
+        <input type="radio" name="gender" value="female"> Female <br><p></p>
+
+       
+
+        <label for=""><b>course:</b></label>
+        <input type="checkbox" name="course" value="NT" > NT
+        <input type="checkbox" name="course" value=" IAD"> IAD
+        <input type="checkbox" name="course" value="DDD"> DDD
+        <input type="checkbox" name="course" value="ESAD"> ESAD
+        <input type="checkbox" name="course" value="JEE"> JEE <br><p></p>
+
+        <label for=""><b>Location:</b></label>
+        <select name="" id="location">
+            <option name="dhanmondi">Dhanmondi</option>
+            <option name="Mirpur">Mirpur</option>
+            <option name="Banani">Banani</option>
+            <option name="Lalbagh">Lalbagh</option>
+        </select> <br><p></p>
+
+        <input type="button" value="submit" onclick="submitForm()">
+
+        <input type="reset" value="Reset">
+
+        <script src="form.js"></script>
+
+    </form>
+</body>
+</html>

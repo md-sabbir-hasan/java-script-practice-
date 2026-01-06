@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <script>
+        let fibo = parseInt(prompt('Please Enter Numjber.'));
+        let n = 0;
+        let n1 = 1;
+        let sum = 0;
+
+        document.write(n + '  ');
+        document.write(n1 + '  ');
+
+        for (i = 3; i <= fibo; i++) 
+        { 
+             sum = n + n1;
+             document.write(sum + '  ');
+             n = n1;
+             n1 = sum;
+        }
+    </script>
+</body>
+</html>

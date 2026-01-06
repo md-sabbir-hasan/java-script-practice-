@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email regEx</title>
+</head>
+
+<body>
+    <form action="">
+        <label for=""><b>Email:</b></label>
+        <input type="text" id="email"> <br>
+        <p></p>
+        <span id="emaill"></span> <br><p></p>
+        <input type="button" value="Submit E-mail"  onclick="checkEmail()">
+       
+    </form>
+    <script>
+        function checkEmail() {
+            let email = document.getElementById('email').value;
+            let pattern = /^\S+@\S+\.\S+$/;
+
+            if (pattern.test(email)) {
+                document.getElementById("emaill").innerHTML = "<span style = 'color:green;'>Email is valid </span"
+            }
+
+            else {
+                document.getElementById("emaill").innerHTML = "<span style = 'color:red;'>Email is invalid </span>"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

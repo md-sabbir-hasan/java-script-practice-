@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble sort</title>
+</head>
+<body>
+     
+  <script>
+    let sort=[20,69,29,36,25,1,369,14,45,3,100,258,2];
+
+    for(let i=0; i<sort.length-1; i++){
+        for(let j=0; j<sort.length-1-i; j++){
+            if(sort[j]>sort[j+1]){
+                let temp=sort[j];
+                sort[j]= sort[j+1];
+                sort[j+1]= temp;
+            }
+        }
+    }
+    document.write("Bubble Sorting :"+" " + sort);
+  </script>
+</body>
+</html>

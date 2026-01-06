@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" onmouseenter="document.bgColor='#F85606'" value="Orange">
+    <input type="button" onmouseenter="document.bgColor='#F5B549'" value=" color">
+
+    <script>
+        
+        let leap = parseInt( prompt(" Please Enter a number"));
+
+
+        if(leap % 4 == 0) {
+
+            document.write(leap + " is Leap Year");
+
+            if( leap % 400 == 0)
+                document.write(leap + " is Leap Year");
+
+                if(leap % 400 == 0 && leap % 100 == 0)
+                    document.write(leap + " is leap year");
+
+        }
+
+        else{ 
+            document.write(leap + ' is not  Leap Year');
+
+
+        }
+
+    </script>
+</body>
+</html>

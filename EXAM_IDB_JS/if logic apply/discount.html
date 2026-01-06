@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount if logic</title>
+</head>
+
+<body>
+    <script>
+        let dis = parseInt(prompt("Enter a number for discount"));
+
+        if (dis < 100) {
+            document.write(dis);
+        }
+        else if (dis <= 300) {
+            document.write(dis-(dis*.10));
+
+        }
+        else if (dis <= 700) {
+            document.write(dis-(dis*.15));
+        }
+        else if (dis <= 1000) {
+            document.write(dis-(dis*.20));
+        }
+        else {
+            document.write(dis-(dis*.25));
+
+        }
+
+
+    </script>
+</body>
+
+</html>

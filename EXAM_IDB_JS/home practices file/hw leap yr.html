@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leap year</title>
+</head>
+<body>
+
+    <script>
+        let leap = parseInt (prompt("Please Enter A Yerar."));
+        let leap1 = alert("Thank You for your Perticipents");
+
+        if(leap % 4 == 0 ) {
+            if(leap % 100 == 0){
+                if(leap % 400 == 0){
+                    document.write( leap + " is LEAP YEAR");
+                }
+            else{
+                document.write(leap + " is NOT leap year" );
+            }
+            }
+            else{
+                document.write(leap + " is LEAP YEAR");
+            }
+        }
+        else{
+            document.write(leap + " is NOT LEAP YEAR");
+        }
+
+    </script>
+    
+</body>
+</html>

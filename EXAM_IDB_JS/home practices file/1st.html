@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st cls of JS</title>
+</head>
+<body>
+    <label for=""><b>Number 1:</b></label>
+    <input type="text" id="number1"> <br><p></p>
+
+    <label for=""><b>Number 2:</b></label>
+    <input type="text" id="number2"> <br><p></p>
+
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="multi()">
+    <input type="button" value="/" onclick="div()">
+    <input type="button" value="%" onclick="mod()">
+    <input type="button" value="Percentage" onclick="per()">
+    <input type="button" value="Auto sum" onclick="autosum()"> <br><p></p>
+
+    <input type="result" id="result" placeholder="Showing Result Here">
+ 
+    <script>
+
+        function sum() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let sum = number1+number2;
+            document.getElementById("result").value = sum;
+        }
+
+        function sub () {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let sub = number1-number2;
+            document.getElementById("result").value= sub;
+        }
+
+        function multi() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 =parseInt(document.getElementById("number2").value);
+            let multi= number1 * number2;
+            document.getElementById("result").value= multi;  
+        }
+
+        function div() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let div =number1/number2;
+            document.getElementById("result").value= div;
+        }
+
+        function mod() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let mod = number1 % number2;
+            document.getElementById("result").value = mod;
+        }
+
+        function per() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let per = (number1*number2)/100;
+            document.getElementById("result").value= per;
+        }
+
+        function autosum() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let autosum = (number1+number2)+ number2;
+            document.getElementById("result").value = autosum;
+        }
+    </script>
+
+
+
+    
+    
+</body>
+</html>

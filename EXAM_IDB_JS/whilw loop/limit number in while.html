@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using while for searching even number</title>
+</head>
+
+<body>
+    <script>
+        // let a=parseInt(prompt("Please Enter starting point."));
+        // let b=parseInt(prompt("Please Enter Ending point."));
+        let a = 5;
+        while (a <= 59) {
+
+            if (a == 50) {
+            
+                document.write(a + ' ');
+
+               break;
+
+            }
+            else if (a % 10 == 0) {
+                a++;
+                continue;
+
+            }
+            document.write(a + ' ');
+            a++;
+        }
+    </script>
+</body>
+
+</html>
