@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form onsubmit="formsub(event)">
+      <label>Name</label>
+      <input type="text" id="name" />
+      <br />
+
+      <label>Contact</label>
+      <input type="text" id="contact" />
+      <br />
+
+      <label>Remarks</label>
+      <textarea id="remarks" rows="3" cols="20"></textarea>
+      <br />
+
+      <label>Sex</label>
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female
+      <input type="radio" name="gender" value="Other" /> Other
+      <br />
+
+      <label>Courses</label>
+      <input type="checkbox" name="courses" value="NT" /> NT
+      <input type="checkbox" name="courses" value="IAD" /> IAD
+      <input type="checkbox" name="courses" value="DDD" /> DDD
+      <input type="checkbox" name="courses" value="ESAD" /> ESAD
+      <br />
+
+      <label>Location</label>
+      <select id="location">
+        <option value="Banani">Banani</option>
+        <option value="Dhanmondi">Dhanmondi</option>
+        <option value="Mirpur">Mirpur</option>
+      </select>
+      <br /><br />
+
+      <button type="submit">Click</button>
+    </form>
+
+    <script>
+      function formsub(event) {
+        event.preventDefault(); // stop page reload
+
+        let name = document.getElementById("name").value;
+        let contact = document.getElementById("contact").value;
+        let remarks = document.getElementById("remarks").value;
+        let location = document.getElementById("location").value;
+
+        let genderEl = document.querySelector('input[name="gender"]:checked');
+        let gender = genderEl ? genderEl.value : "Not selected";
+
+        let coursesEl = document.querySelectorAll(
+          'input[name="courses"]:checked'
+        );
+        let courses = [];
+
+        coursesEl.forEach((course) => {
+          courses.push(course.value);
+        });
+
+        let output = `
+    <h2>Form Details</h2>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Contact:</strong> ${contact}</p>
+    <p><strong>Remarks:</strong> ${remarks}</p>
+    <p><strong>Sex:</strong> ${gender}</p>
+    <p><strong>Courses:</strong> ${courses.join(", ") || "None"}</p>
+    <p><strong>Location:</strong> ${location}</p>
+  `;
+
+        let newWindow = window.open("", "_blank");
+        newWindow.document.write(output);
+      }
+    </script>
+  </body>
+</html>
