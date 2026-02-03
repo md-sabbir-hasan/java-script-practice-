@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">name</label>
+        <input type="text" id="name">
+        <br><br>
+
+        <label for="">contact</label>
+        <input type="text" id="contact">
+        <br><br>
+
+
+        <label for="">remarks</label>
+        <textarea name="" id="remarks" rows="3" cols="50"></textarea>
+        <br><br>
+
+        <label for="">location</label>
+        <select name="" id="location">
+            <option value="mir">mir</option>
+            <option value="dhan">dhan</option>
+        </select>
+        <br><br>
+
+        <label for="">sex</label>
+        <input type="radio" name="sex" value="male">male
+        <input type="radio" name="sex" value="female">female
+        <br><br>
+
+
+        <label for="">courses</label>
+        <input type="checkbox" name="courses" id="" value="nt">nt
+        <input type="checkbox" name="courses" id="" value="iad">Iad
+        <input type="checkbox" name="courses" id="" value="dd">dd
+        <input type="checkbox" name="courses" id="" value="esad">esad
+        <br><br>
+
+        <button type="submit" onclick="formSub()">CLICK</button>
+    </form>
+    <script>function formSub() {
+    let name = document.getElementById("name").value;
+    let contact = document.getElementById("contact").value;
+    let remarks = document.getElementById("remarks").value;
+    let location = document.getElementById("location").value;
+    let sex = document.querySelector('input[name="sex"]:checked');
+    let courses = document.querySelectorAll('input[name="courses"]:checked');
+
+    let courseValue =[];
+    for (let i=0; i <courses.length; i++) {
+        courseValue.push(courses[i].value);
+    }
+
+    let output = "name= " + name + "<br>" +
+    "contact= " + contact + "<br>" +
+    "remarks= " + remarks + "<br>" +
+    "location= " + location + "<br>" +
+    "sex= " + sex.value + "<br>" +
+    "courses= " + courseValue + "<br>" ;
+
+    let newWindow =  window.open('','_blank');
+    newWindow.document.write(output);
+}</script>
+</body>
+</html>
